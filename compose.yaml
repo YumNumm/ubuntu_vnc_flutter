@@ -1,0 +1,6 @@
+services:
+  ubuntu_vnc:
+    build: .
+    tty: true
+    ports:
+      - 5901:5901
