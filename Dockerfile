@@ -5,7 +5,8 @@ ENV USER root
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends lxde  wget git curl xz-utils zip clang curl \
-            pkg-config ninja-build cmake libgtk-3-dev libblkid-dev liblzma-dev unzip  tightvncserver && \
+            pkg-config ninja-build cmake libgtk-3-dev libblkid-dev liblzma-dev unzip tightvncserver \
+            libfontconfig1 libfreetype6 libglib2.0-bin libssl-dev ca-certificates && \
     mkdir /root/.vnc
 
 ADD xstartup /root/.vnc/xstartup
